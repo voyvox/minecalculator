@@ -15,6 +15,7 @@
 		9C907E121CADBE4F00AF8127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C907E101CADBE4F00AF8127 /* LaunchScreen.storyboard */; };
 		9C907E1D1CADBE4F00AF8127 /* minecalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C907E1C1CADBE4F00AF8127 /* minecalculatorTests.swift */; };
 		9C907E281CADBE4F00AF8127 /* minecalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C907E271CADBE4F00AF8127 /* minecalculatorUITests.swift */; };
+		9CE7810D1CB0C335006F672C /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9CE7810C1CB0C335006F672C /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9C907E231CADBE4F00AF8127 /* minecalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = minecalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C907E271CADBE4F00AF8127 /* minecalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minecalculatorUITests.swift; sourceTree = "<group>"; };
 		9C907E291CADBE4F00AF8127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CE7810C1CB0C335006F672C /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				9C721FDD1CAE382300C58E30 /* Minecraft.ttf */,
+				9CE7810C1CB0C335006F672C /* btn.wav */,
 				9C907E071CADBE4F00AF8127 /* AppDelegate.swift */,
 				9C907E091CADBE4F00AF8127 /* ViewController.swift */,
 				9C907E0B1CADBE4F00AF8127 /* Main.storyboard */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE7810D1CB0C335006F672C /* btn.wav in Resources */,
 				9C907E121CADBE4F00AF8127 /* LaunchScreen.storyboard in Resources */,
 				9C907E0F1CADBE4F00AF8127 /* Assets.xcassets in Resources */,
 				9C721FDE1CAE382300C58E30 /* Minecraft.ttf in Resources */,
