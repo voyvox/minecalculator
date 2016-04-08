@@ -21,6 +21,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var outputLbl: UILabel!
     
+    @IBOutlet weak var clearButton: UIButton!
+    
+    
     var btnSound: AVAudioPlayer!
     
     var runningNumber = ""
@@ -73,6 +76,10 @@ class ViewController: UIViewController {
        processOperation(currentOperation)
     }
     
+    @IBAction func onClearPressed(sender: AnyObject) {
+        clearOutputLabel()
+    }
+    
     
     func playSound() {
         if btnSound.playing {
@@ -121,6 +128,14 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    func clearOutputLabel() {
+        playSound()
+        
+        //Clear button does nothing currently but play a sound. Rethink how to go about this since your first method causes crashes when clearing, then immediately doing smoething like "+/-/*/divide 3 =" 
+    }
+        
+        
     
  
 }
