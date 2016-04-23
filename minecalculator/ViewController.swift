@@ -132,6 +132,15 @@ class ViewController: UIViewController {
     func clearOutputLabel() {
         playSound()
         
+        leftValString = ""
+        rightValString = ""
+        result = ""
+        currentOperation = Operation.Empty
+        
+        runningNumber = ""
+        
+        outputLbl.text = "0"
+        
         //Clear button does nothing currently but play a sound. Rethink how to go about this since your first method causes crashes when clearing, then immediately doing smoething like "+/-/*/divide 3 =" 
     }
         
