@@ -21,7 +21,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var outputLbl: UILabel!
     
-    @IBOutlet weak var clearButton: UIButton!
+    
+    @IBOutlet weak var clearButton: SpringButton!
+    
+    @IBOutlet weak var divideButton: SpringButton!
+    @IBOutlet weak var multiplyButton: SpringButton!
+    @IBOutlet weak var addButton: SpringButton!
+    @IBOutlet weak var subtractButton: SpringButton!
+    @IBOutlet weak var equalButton: SpringButton!
     
     
     var btnSound: AVAudioPlayer!
@@ -48,37 +55,71 @@ class ViewController: UIViewController {
         } catch let err as NSError { print(err.debugDescription) }
     }
 
-    @IBAction func numberPressed(btn: UIButton!) {
+
+    
+    
+    
+    @IBAction func numberPressed(btn: SpringButton!) {
         playSound()
+        animate(btn)
+        
         
         runningNumber += "\(btn.tag)"
         outputLbl.text = runningNumber
-        
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     @IBAction func onDividePressed(sender: AnyObject) {
         processOperation(Operation.Divide)
+        animate(divideButton)
+        
     }
 
     @IBAction func onMultiplyPressed(sender: AnyObject) {
         processOperation(Operation.Multiply)
+        animate(multiplyButton)
     }
     
     @IBAction func onSubtractPressed(sender: AnyObject) {
         processOperation(Operation.Subtract)
+        animate(subtractButton)
     }
     
     @IBAction func onAddPressed(sender: AnyObject) {
         processOperation(Operation.Add)
+        animate(addButton)
     }
 
     @IBAction func onEqualPressed(sender: AnyObject) {
        processOperation(currentOperation)
+    animate(equalButton)
     }
     
     @IBAction func onClearPressed(sender: AnyObject) {
+        animate(clearButton)
+
         clearOutputLabel()
     }
+    
+    
+    
+    
+    func animate(btnType: SpringButton!) {
+        btnType.animation = "morph"
+        btnType.animate()
+        
+    }
+    
+    
+    
     
     
     func playSound() {
@@ -91,6 +132,7 @@ class ViewController: UIViewController {
     
     func processOperation(op: Operation) {
         playSound()
+        
         
         
             
